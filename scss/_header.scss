@@ -1,0 +1,97 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    z-index: 10;
+    color: #fff;
+    @include tab {
+        position: fixed;
+        display: block;
+        padding: 0px;
+    }
+}
+
+.hd-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    @include tab {
+        width: 30%;
+        padding: 10px;
+    }
+}
+
+nav {
+    width: 45%;
+    @include tab {
+        display: none;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.2rem;
+    }
+}
+
+.ham {
+    display: none;
+    @include tab {
+        width: 25px;
+        height: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        right: 20px;
+        bottom: 30px;
+        margin: 0 0 0 auto;
+        span {
+            display: inline-block;
+            width: 100%;
+            height: 1px;
+            background-color: #fff;
+        }
+    }
+}
+
+
+.drawer {
+    @include tab {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.8);
+        transition: 1s ease;
+        opacity: 0;
+        &.active {
+            opacity: 1;
+        }
+    }
+}
+
+.drawer-wrap {
+    display: none;
+    @include tab {
+        letter-spacing: 1.5px;
+        padding-top: 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        font-size: 2rem;
+        p {
+            margin-bottom: 20px;
+            border-bottom: 1px solid white;
+        }
+    }
+}
+
+.openBtn {
+    display: none;
+    @include tab {
+    display: contents;
+    padding: 0;
+    }
+}

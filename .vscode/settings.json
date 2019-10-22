@@ -1,0 +1,13 @@
+{
+    "workbench.colorTheme": "Visual Studio Dark",
+    "window.zoomLevel": 0,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/css/"
+        }
+    ]
+}
